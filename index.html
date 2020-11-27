@@ -1329,9 +1329,13 @@
 					<div class="row">
 						<div class="col-outer col-12 col-md-12 col-lg-12">
 							<div class="facebook-object">
-								<div class="object-image aos-init" data-aos="fade-right" data-aos-duration="1500"  >
+								<div class="object-image aos-init left-driver" data-aos="fade-right" data-aos-duration="1500"  >
 									<div class="image">
-										<img class = "left-driver" src="./images/home/facebook-object-image-1.png" alt="" title="" />
+										<div class="astronaut"> 
+											<div class="body"></div>
+											<img class="left-leg" src="./images/home/diver-left-leg.png" alt="" />
+											<img class="right-leg" src="./images/home/diver-right-leg.png" alt="" />
+										  </div>
 									</div>
 								</div>
 								<div class="object-image aos-init" data-aos="fade-down" data-aos-duration="2000" >
@@ -1339,9 +1343,13 @@
 										<img src="./images/home/facebook-object-image-2.png" alt="" title="" id="messge-icon" />
 									</div>
 								</div>
-								<div class="object-image aos-init" data-aos="fade-left" data-aos-duration="2500" >
-									<div class="image">
-										<img class = "right-driver" src="./images/home/facebook-object-image-3.png" alt="" title="" />
+								<div class="object-image aos-init right-driver" data-aos="fade-left" data-aos-duration="2500" >
+									<div class="image" style="transform: rotate(-58deg);">
+										<div class="astronaut-revert"> 
+											<div class="body-revert"></div>
+											<img class="left-leg-revert" src="./images/home/diver-left-leg-revert.png" alt="" />
+											<img class="right-leg-revert" src="./images/home/diver-right-leg-revert.png" alt="" />
+										  </div>
 									</div>
 								</div>
 							</div>
@@ -1358,7 +1366,44 @@
 								</div>
 								<div class="preview-image">
 									<div class="image">
-										<img src="./images/home/facebook-preview-image-1.jpg" alt="" title="" />
+										<h6>Webz Digital Client Feed</h6>
+										<div class="card">
+											<div class="card-body">
+												<div class="card-title">פךןוקט  Once -צןך יצחק</div>
+												<img src="./images/home/portfolio-image-3.jpg" />
+												<div class="card-text"></div>
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-title">ציפ צןזןב</div>
+											<div class="card-body">
+												<img src="./images/home/madicine.jpg" alt="">
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-title"></div>
+											<div class="card-body">
+												<img src="./images/home/terrific-girl.jpg" alt="">
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-title"></div>
+											<div class="card-body">
+												<img src="./images/home/portfolio-image-4.jpg" alt="">
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-title"></div>
+											<div class="card-body">
+												<img src="./images/home/dirty-shoes.jpg" alt="">
+											</div>
+										</div>
+										<div class="card">
+											<div class="card-title"></div>
+											<div class="card-body">
+												<img src="./images/home/distance-signal.jpg" alt="">
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="preview-scroll">
@@ -1373,7 +1418,7 @@
 					</div>
 				</div>
 				
-				<!-- <div class="row" style="margin-top: -400px">
+				<div class="row" style="margin-top: -400px">
 					<div class="col-lg-2">
 						<div class="jellyfish-left image aos-init" data-aos="fade-right" data-aos-duration="2500" >
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530.46 563.1" >
@@ -1463,7 +1508,7 @@
 							</svg>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 			<!--About-->
 			<div class="section about">
@@ -1762,40 +1807,84 @@
 			blink
 			.to(".eye", 0.5, {scaleY: 0.5,opacity: 0.2, svgOrigin: "center", delay: 3, ease: Back.easeOut.config(1.7), })
 			.to(".eye", 0.5, { scaleY: 1, opacity: 1,  svgOrigin: "center", ease: Back.easeOut.config(1.7), });
-		</script>
-		<script>
 			var diver = new TimelineMax({})
 			diver
 			.to(".left-driver", 10, {y : 560})
 			.to(".right-driver", 10, { y : 560, delay : -10})
-		</script>
-		<script>
-			var message = new TimelineMax({ repeat : -1, repeatDelay : 1 });
+			var message = new TimelineMax({ repeat : -1, repeatDelay : .1 });
 			message
-			.to(".typing-indicator-heart", 1, { scale : 1, opacity : 1, delay: -1 })
-			.to(".typing-indicator-heart", 1, { scale : 0.5, opacity : 0, delay : 1})
-			.to(".typing-indicator-hashtag", 1, { scale : 1, opacity : 1})
-			.to(".typing-indicator-hashtag", 1, { scale : 0.5, opacity : 0, delay : 1})
-		</script>
-		<script>
-			message
-			.to(".typing-indicator-heart-women", 0.5, { scale : 1, opacity : 1, delay : -1 })
-			.to(".typing-indicator-heart-women", 0.5, { scale : 0.5, opacity : 0, delay : -1 })
+			.to(".typing-indicator-heart", .1, { scale : 1, opacity : 1, delay: -.1 })
+			.to(".typing-indicator-heart", .1, { scale : 0.5, opacity : 0, delay : .1})
+			.to(".typing-indicator-hashtag", .1, { scale : 1, opacity : 1})
+			.to(".typing-indicator-hashtag", .1, { scale : 0.5, opacity : 0, delay : .1})
+			var message_blink_for_girl = new TimelineMax({ repeat : -1, repeatDelay : .1 });
+			message_blink_for_girl
+			.to(".typing-indicator-heart-women", 0.5, { scale : 1, opacity : 1, delay : -.1 })
+			.to(".typing-indicator-heart-women", 0.5, { scale : 0.5, opacity : 0, delay : -.1 })
 			.to(".typing-indicator-hashtag-women", 0.5, { scale : 1, opacity : 1, })
 			.to(".typing-indicator-hashtag-women", 0.5, { scale : 0.5, opacity : 0,delay : 0.5,});
-		</script>
-		<script>
-			message
+			var message_blink_for_boy = new TimelineMax({ repeat : -1, repeatDelay : .1});
+			message_blink_for_boy
 			.to(".typing-indicator-heart-otherguy", 0.5, { scale : 1, opacity : 1})
 			.to(".typing-indicator-heart-otherguy", 0.5, { scale : 0.5, opacity : 0, delay : -1 })
-		</script>
-		<script>
 			var tl = new TimelineMax({});
 			tl.addLabel("start", 0)
 			.add(TweenMax.to(".firebubble", 1,{ scaleY : 1.5, opacity : 1, delay : 3.2}))
 			.add(TweenMax.to(".firebubble", 1,{ y : -2500, delay : 3.2}))
 			.add(TweenMax.to(".missilefire", 1, {y : -2200, delay : -1}))
 			.add(TweenMax.to(".missilefire", 1, {opacity : 0, delay: -1}))
-			.add(TweenMax.to(".shootingstar", 1, {display : "block"}))
-		</script>
+			.add(TweenMax.to(".shootingstar", 1, {display : "block"}));
+		window.onload = function () {
+			let DEFAULT_TIMELINE = { 
+				repeat: -1,
+				yoyo: true
+			}
+			let DEFAULT_ANIM_PARAMS = {
+				duration: 1,
+				ease: "power2.inOut"
+			}
+
+			let mainTimeline = gsap.timeline(DEFAULT_TIMELINE);
+			mainTimeline.to('.astronaut', { 
+				duration: 0.5,
+				ease:  "none",
+				rotate: -3
+			})
+			
+			let rightLeg = gsap.timeline(DEFAULT_TIMELINE);
+			rightLeg.to('.right-leg', {
+				...DEFAULT_ANIM_PARAMS,
+				transformOrigin: "top right",
+				rotate: 3,
+			})
+
+			let leftLeg = gsap.timeline(DEFAULT_TIMELINE);
+			leftLeg.to('.left-leg', {
+				...DEFAULT_ANIM_PARAMS,
+				transformOrigin: "top right",
+				rotate: -3,
+			})
+
+			let mainTimelinerevert = gsap.timeline(DEFAULT_TIMELINE);
+			mainTimelinerevert.to('.astronaut-revert', { 
+				duration: 0.5,
+				ease:  "none",
+				rotate: -3
+			})
+			
+			let rightLegrevert = gsap.timeline(DEFAULT_TIMELINE);
+			rightLegrevert.to('.right-leg-revert', {
+				...DEFAULT_ANIM_PARAMS,
+				transformOrigin: "top left",
+				rotate: 3,
+			})
+
+			let leftLegrevert = gsap.timeline(DEFAULT_TIMELINE);
+			leftLegrevert.to('.left-leg-revert', {
+				...DEFAULT_ANIM_PARAMS,
+				transformOrigin: "top left",
+				rotate: -3,
+			})
+		}			
+	</script>
 </html>

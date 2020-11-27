@@ -1223,6 +1223,7 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	background: white;
 }
 
 .home .socmed.facebook .facebook-preview .preview-image::-webkit-scrollbar {
@@ -2359,4 +2360,80 @@ svg, .jellyfish {
 	background-color: transparent;
 }
 
+.astronaut {
+	width: 200px;
+	height: 300px;
+	position: relative;
+	top: 21%;
+	left: 0;
+	z-index: 10;
+	filter: blur(0.25px);
+	perspective: 500px;
+}
 
+.body {
+    position: absolute;
+    top: 95px;
+    left: 53px;
+    height: 120px;
+    width: 100%;
+    border-radius: 30px;
+    z-index: 3;
+	background: url(../images/home/diver-body.png);
+	background-size: cover;
+}
+
+.right-leg{
+	width: 200px;
+    height: 140px;
+    position: absolute;
+    top: 88px;
+    left: 61px;
+}
+
+.left-leg{
+	width: 200px;
+    height: 140px;
+    position: absolute;
+    top: 87px;
+    left: 62px;
+}
+
+.astronaut-revert {
+	width: 200px;
+	height: 300px;
+	position: relative;
+	top: 21%;
+	left: -10%;
+	z-index: 10;
+	filter: blur(0.25px);
+	perspective: 500px;
+}
+
+.body-revert {
+    position: absolute;
+    top: 95px;
+    left: 53px;
+    height: 120px;
+    width: 100%;
+    border-radius: 30px;
+    z-index: 3;
+	background: url(../images/home/diver-body-revert.png);
+	background-size: cover;
+}
+
+.right-leg-revert{
+	width: 200px;
+    height: 140px;
+    position: absolute;
+    top: 30px;
+    left: 66px;
+}
+
+.left-leg-revert{
+	width: 200px;
+    height: 140px;
+    position: absolute;
+    top: 33px;
+    left: 69px;
+}
