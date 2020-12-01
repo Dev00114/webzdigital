@@ -1816,8 +1816,8 @@ svg, .jellyfish {
 .typing-indicator-heart {
 	opacity: 0;
 	background-color: #e4c658;
-	width: 50px;
-	height: 40px;
+	width: 40px;
+	height: 30px;
 	border-radius: 20px;
 	padding: 0 0;
 	display: table;
@@ -1847,8 +1847,9 @@ svg, .jellyfish {
 .typing-indicator-heart::after{
 	content: '\2764';
 	position: absolute;
-	bottom: -5px;
-	left: 9px;
+	bottom: 0px;
+	left: 11px;
+	font-size: 20px;
 }
 
 
@@ -1856,8 +1857,8 @@ svg, .jellyfish {
 	opacity: 0;
 	background-color: #e4c658;
 	will-change: transform;
-	width: 50px;
-	height: 40px;
+	width: 40px;
+	height: 30px;
 	border-radius: 20px;
 	padding: 0px;
 	display: table;
@@ -1887,8 +1888,10 @@ svg, .jellyfish {
 .typing-indicator-hashtag::after{
 	content: '\0023';
 	position: absolute;
-	bottom: -5px;
+	bottom: -2px;
 	left: 16px;
+	font-size: 22px;
+	font-weight: bolder;
 }
 
 .typing-indicator-heart-otherguy {
@@ -1925,8 +1928,9 @@ svg, .jellyfish {
 .typing-indicator-heart-otherguy::after{
 	content: '\2764';
 	position: absolute;
-	bottom: -5px;
-	left: 9px;
+	bottom: 0px;
+	left: 13px;
+	font-size: 22px;
 }
 
 .typing-indicator-hashtag-otherguy {
@@ -1965,15 +1969,17 @@ svg, .jellyfish {
 .typing-indicator-hashtag-otherguy::after{
 	content: '\263B';
 	position: absolute;
-	bottom: -3px;
-	left: 9px;
+	bottom: 0px;
+	left: 10px;
+	font-size: 30px;
 }
 
 .typing-indicator-heart-women::after{
 	content: "\2764";
 	position: absolute;
-	bottom: -5px;
-	left: 9px;
+	bottom: 2px;
+	left: 13px;
+	font-size: 22px;
 }
 
 .typing-indicator-heart-women {
@@ -2374,7 +2380,7 @@ svg, .jellyfish {
 .body {
     position: absolute;
     top: 95px;
-    left: 53px;
+    left: -6px;
     height: 120px;
     width: 100%;
     border-radius: 30px;
@@ -2388,7 +2394,7 @@ svg, .jellyfish {
     height: 140px;
     position: absolute;
     top: 88px;
-    left: 61px;
+    left: 0px;
 }
 
 .left-leg{
@@ -2396,7 +2402,7 @@ svg, .jellyfish {
     height: 140px;
     position: absolute;
     top: 87px;
-    left: 62px;
+    left: 3px;
 }
 
 .astronaut-revert {
@@ -2412,7 +2418,7 @@ svg, .jellyfish {
 
 .body-revert {
     position: absolute;
-    top: 95px;
+    top: 60px;
     left: 53px;
     height: 120px;
     width: 100%;
@@ -2426,7 +2432,7 @@ svg, .jellyfish {
 	width: 200px;
     height: 140px;
     position: absolute;
-    top: 30px;
+    top: -7px;
     left: 66px;
 }
 
@@ -2434,6 +2440,36 @@ svg, .jellyfish {
 	width: 200px;
     height: 140px;
     position: absolute;
-    top: 33px;
+    top: -4px;
     left: 69px;
+}
+
+#more{display: none}
+.content-summary-menu{
+	display: flex;
+}
+
+.content-summary-mark{
+	width: 40px;
+	height: 40px;
+	background-color: grey;
+	border-radius: 50%;
+	display: table;
+}
+.content-summary-mark-innertext{
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+	margin: auto;
+}
+.content-summary-menu-btn{
+	position: fixed;
+	right: 0;
+}
+.content-summary-detail{
+	padding-left: 10px;
+}
+#myBtn{
+	margin-top: -48px;
+    color: #3b5999;
 }
